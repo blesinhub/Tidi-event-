@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akpom Event Planning — We Create Unforgettable Moments</title>
+  <meta name="description" content="Akpom Event Planning by Tiana — Weddings, Birthdays, Corporate Events. Nigeria-based premium event planner. Book your date today." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎉</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#6D28D9', // purple
+              dark: '#5B21B6',
+              light: '#8B5CF6'
+            },
+            accent: '#F59E0B', // warm gold
+          },
+          boxShadow: {
+            soft: '0 10px 25px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Simple keyframe for subtle fades */
+    @keyframes fadeUp { from {opacity:0; transform: translateY(12px)} to {opacity:1; transform: translateY(0)} }
+    .fade-up { animation: fadeUp .8s ease both; }
+
+    /* Gallery slider */
+    .slider { position: relative; overflow: hidden; }
+    .slides { display: flex; transition: transform 0.6s ease; }
+    .slide { min-width: 100%; }
+
+    /* Floating WhatsApp */
+    .float-wa { position: fixed; right: 1rem; bottom: 1.25rem; z-index: 50; }
+  </style>
+</head>
+<body class="text-gray-800 bg-gradient-to-b from-white to-gray-50">
+  <!-- Top Bar -->
+  <div class="w-full bg-primary text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="tel:+2348168211183" class="hover:underline">📞 +234 816 821 1183</a>
+        <a href="mailto:Africantiana@gmail.com" class="hover:underline">✉️ Africantiana@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span>IG: <span class="font-medium">akpom dibuaku Tiana</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 backdrop-blur bg-white/80 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <span class="text-2xl">🎉</span>
+        <span class="font-black tracking-tight text-xl">Akpom Event Planning</span>
+      </a>
+      <button id="menuBtn" class="md:hidden px-3 py-2 rounded-lg border">Menu</button>
+      <ul id="menu" class="hidden md:flex items-center gap-6 font-medium">
+        <li><a href="#services" class="hover:text-primary">Services</a></li>
+        <li><a href="#gallery" class="hover:text-primary">Gallery</a></li>
+        <li><a href="#about" class="hover:text-primary">About</a></li>
+        <li><a href="#testimonials" class="hover:text-primary">Reviews</a></li>
+        <li><a href="#booking" class="hover:text-primary">Book Us</a></li>
+        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <ul class="px-4 py-3 space-y-2">
+        <li><a href="#services" class="block py-2">Services</a></li>
+        <li><a href="#gallery" class="block py-2">Gallery</a></li>
+        <li><a href="#about" class="block py-2">About</a></li>
+        <li><a href="#testimonials" class="block py-2">Reviews</a></li>
+        <li><a href="#booking" class="block py-2">Book Us</a></li>
+        <li><a href="#contact" class="block py-2">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 py-20 lg:py-28 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="fade-up">
+        <h1 class="text-4xl lg:text-6xl font-black leading-tight">
+          We Create <span class="text-primary">Unforgettable</span> Moments
+        </h1>
+        <p class="mt-4 text-lg text-gray-600 max-w-prose">
+          From opulent <strong>weddings</strong> to vibrant <strong>birthdays</strong> and flawless <strong>corporate events</strong>, Akpom Event Planning by Tiana brings your vision to life with elegance and precision.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#booking" class="px-6 py-3 rounded-2xl bg-primary text-white font-semibold shadow-soft hover:bg-primary-dark">Book Your Date</a>
+          <a href="#services" class="px-6 py-3 rounded-2xl border font-semibold">Explore Services</a>
+        </div>
+        <div class="mt-6 text-sm text-gray-500">Serving clients across Nigeria 🇳🇬</div>
+      </div>
+      <div class="relative fade-up">
+        <div class="rounded-3xl overflow-hidden shadow-soft">
+          <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1200&auto=format&fit=crop" alt="Elegant wedding setup" class="w-full h-80 object-cover"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Birthday event" class="rounded-2xl h-40 w-full object-cover"/>
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" alt="Corporate gala" class="rounded-2xl h-40 w-full object-cover"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl lg:text-4xl font-black">Our Services</h2>
+        <p class="text-gray-600 mt-3">Tailored packages to suit your style, culture, and budget.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <!-- Wedding -->
+        <div class="p-6 rounded-3xl bg-gradient-to-b from-purple-50 to-white border shadow-soft">
+          <div class="text-3xl">💍</div>
+          <h3 class="mt-3 font-bold text-lg">Weddings</h3>
+          <p class="text-gray-600 mt-2">White weddings & Igbo traditional ceremonies (Igba Nkwu) with full decor, coordination, and vendors.</p>
+        </div>
+        <!-- Birthdays -->
+        <div class="p-6 rounded-3xl bg-gradient-to-b from-yellow-50 to-white border shadow-soft">
+          <div class="text-3xl">🎂</div>
+          <h3 class="mt-3 font-bold text-lg">Birthdays</h3>
+          <p class="text-gray-600 mt-2">Kids, teens, and milestone birthdays — themes, cakes, photo booths, and entertainment.</p>
+        </div>
+        <!-- Corporate -->
+        <div class="p-6 rounded-3xl bg-gradient-to-b from-blue-50 to-white border shadow-soft">
+          <div class="text-3xl">🏢</div>
+          <h3 class="mt-3 font-bold text-lg">Corporate Events</h3>
+          <p class="text-gray-600 mt-2">Conferences, product launches, end-of-year parties with professional staging & logistics.</p>
+        </div>
+        <!-- Private/Other -->
+        <div class="p-6 rounded-3xl bg-gradient-to-b from-pink-50 to-white border shadow-soft">
+          <div class="text-3xl">🌺</div>
+          <h3 class="mt-3 font-bold text-lg">Private & Luxury</h3>
+          <p class="text-gray-600 mt-2">Proposals, baby showers, anniversaries, and bespoke luxury experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Events (Dynamic Gallery + Categories) -->
+  <section id="gallery" class="py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl lg:text-4xl font-black">Latest Events</h2>
+        <p class="text-gray-600 mt-3">Upload and showcase birthdays, weddings, anniversaries, proposals, and more.</p>
+      </div>
+
+      <!-- Filters + Upload button -->
+      <div class="mt-8 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap gap-2" id="eventFilters">
+          <button data-filter="all" class="px-4 py-2 rounded-full border bg-white hover:bg-gray-100">All</button>
+          <button data-filter="Wedding" class="px-4 py-2 rounded-full border bg-white hover:bg-gray-100">💍 Weddings</button>
+          <button data-filter="Birthday" class="px-4 py-2 rounded-full border bg-white hover:bg-gray-100">🎂 Birthdays</button>
+          <button data-filter="Anniversary" class="px-4 py-2 rounded-full border bg-white hover:bg-gray-100">🎉 Anniversaries</button>
+          <button data-filter="Proposal" class="px-4 py-2 rounded-full border bg-white hover:bg-gray-100">💖 Proposals</button>
+          <button data-filter="Corporate" class="px-4 py-2 rounded-full border bg-white hover:bg-gray-100">🏢 Corporate</button>
+        </div>
+        <button id="openUploader" class="px-5 py-2.5 rounded-2xl bg-primary text-white font-semibold shadow-soft hover:bg-primary-dark">＋ Upload Event</button>
+      </div>
+
+      <!-- Dynamic Grid -->
+      <div id="eventGrid" class="mt-8 [column-count:1] sm:[column-count:2] lg:[column-count:3] gap-4"></div>
+
+      <!-- Empty state -->
+      <div id="emptyState" class="hidden mt-10 text-center text-gray-500">No events yet. Click <span class="font-semibold">Upload Event</span> to add photos/videos.</div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about" class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="order-2 lg:order-1">
+        <h2 class="text-3xl lg:text-4xl font-black">About Akpom Event Planning</h2>
+        <p class="text-gray-600 mt-4">Founded by <strong>Tiana</strong>, we are passionate about crafting authentic celebrations that reflect your culture and personality. Our team handles everything — concept, vendors, decor, logistics, stage management — so you can relax and enjoy your day.</p>
+        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+          <li>Full-service planning & same-day coordination</li>
+          <li>Vendor sourcing: caterers, photographers, MCs, DJs, live bands</li>
+          <li>Budget-friendly packages and premium luxury setups</li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a href="#booking" class="px-5 py-3 rounded-2xl bg-primary text-white font-semibold hover:bg-primary-dark">Get a Quote</a>
+          <a href="https://wa.me/2348168211183?text=Hello%20Akpom%20Event%20Planning%2C%20I%27d%20love%20to%20plan%20an%20event" target="_blank" class="px-5 py-3 rounded-2xl border font-semibold">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <img src="https://images.unsplash.com/photo-1602382258437-2c12f3d62bba?q=80&w=1200&auto=format&fit=crop" alt="Team planning session" class="rounded-3xl shadow-soft w-full h-96 object-cover"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl lg:text-4xl font-black">Client Reviews</h2>
+        <p class="text-gray-600 mt-3">What our clients are saying.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+        <figure class="p-6 rounded-3xl bg-white border shadow-soft">
+          <blockquote class="text-gray-700">“They handled our Igba Nkwu with class. Everything was on time and beautiful.”</blockquote>
+          <figcaption class="mt-4 font-semibold">— Chiamaka & Chinedu</figcaption>
+        </figure>
+        <figure class="p-6 rounded-3xl bg-white border shadow-soft">
+          <blockquote class="text-gray-700">“My 30th birthday was a dream. Decor, DJ, cake — 10/10. Thank you!”</blockquote>
+          <figcaption class="mt-4 font-semibold">— Ifeoma O.</figcaption>
+        </figure>
+        <figure class="p-6 rounded-3xl bg-white border shadow-soft">
+          <blockquote class="text-gray-700">“Professional team. Our product launch looked world-class and seamless.”</blockquote>
+          <figcaption class="mt-4 font-semibold">— Adewale, Brand Manager</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking" class="py-16 lg:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-3xl lg:text-4xl font-black">Book Your Event</h2>
+        <p class="text-gray-600 mt-3">Tell us about your event and we’ll get back to you fast.</p>
+      </div>
+
+      <form id="bookingForm" class="mt-8 grid md:grid-cols-2 gap-4 bg-gray-50 p-6 rounded-3xl border shadow-soft">
+        <div>
+          <label class="block text-sm font-semibold">Full Name</label>
+          <input required name="name" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="Your name" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold">Email</label>
+          <input required type="email" name="email" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="you@example.com" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold">Phone/WhatsApp</label>
+          <input required name="phone" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="e.g., 0812 345 6789" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold">Event Type</label>
+          <select name="type" class="mt-1 w-full px-4 py-3 rounded-xl border">
+            <option>Wedding</option>
+            <option>Igbo Traditional</option>
+            <option>Birthday</option>
+            <option>Corporate</option>
+            <option>Private/Luxury</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold">Event Date</label>
+          <input required type="date" name="date" class="mt-1 w-full px-4 py-3 rounded-xl border" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold">Expected Guests</label>
+          <input required type="number" name="guests" min="1" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="e.g., 150" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold">Event Location</label>
+          <input name="location" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="City / Venue" />
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold">Details</label>
+          <textarea name="details" rows="4" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="Tell us your vision, theme, colours, budget..."></textarea>
+        </div>
+        <div class="md:col-span-2 flex items-center justify-between gap-3">
+          <button class="px-6 py-3 rounded-2xl bg-primary text-white font-semibold hover:bg-primary-dark" type="submit">Send Request</button>
+          <span id="formMsg" class="text-sm text-gray-600"></span>
+        </div>
+      </form>
+
+      <p class="mt-4 text-sm text-gray-500 text-center">Alternatively, chat us on WhatsApp: <a class="text-primary font-semibold" href="https://wa.me/2348168211183" target="_blank">+234 816 821 1183</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl lg:text-4xl font-black">Frequently Asked Questions</h2>
+        <p class="text-gray-600 mt-3">Quick answers to common questions.</p>
+      </div>
+      <div class="mt-8 grid lg:grid-cols-2 gap-6">
+        <details class="bg-white border rounded-2xl p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Do you travel outside your city?</summary>
+          <p class="mt-2 text-gray-600">Yes, we plan events nationwide in Nigeria. Travel fees apply based on distance.</p>
+        </details>
+        <details class="bg-white border rounded-2xl p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Can you work with my budget?</summary>
+          <p class="mt-2 text-gray-600">Absolutely. We offer budget-friendly and premium options. We’ll advise where to save or splurge.</p>
+        </details>
+        <details class="bg-white border rounded-2xl p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Do you handle vendors?</summary>
+          <p class="mt-2 text-gray-600">Yes — we source and manage trusted caterers, photographers, MCs, DJs, decorators, etc.</p>
+        </details>
+        <details class="bg-white border rounded-2xl p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">How early should I book?</summary>
+          <p class="mt-2 text-gray-600">For weddings, 3–6 months ahead is ideal. For birthdays/corporate, 2–8 weeks works.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl lg:text-4xl font-black">Contact Us</h2>
+        <p class="text-gray-600 mt-3">We’d love to hear from you. Reach out via phone, email, or social media.</p>
+        <ul class="mt-6 space-y-3 text-lg">
+          <li>📞 <a class="hover:underline" href="tel:+2348168211183">+234 816 821 1183</a></li>
+          <li>✉️ <a class="hover:underline" href="mailto:Africantiana@gmail.com">Africantiana@gmail.com</a></li>
+          <li>📸 Instagram: <span class="font-semibold">akpom dibuaku Tiana</span></li>
+        </ul>
+      </div>
+      <div class="rounded-3xl overflow-hidden border shadow-soft">
+        <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63533.53073609563!2d7.447!3d6.440!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a2613a3a0f0b%3A0xead0b4f4070ef0e6!2sEnugu!5e0!3m2!1sen!2sng!4v1691500000000" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© <span id="year"></span> Akpom Event Planning. All rights reserved.</p>
+      <div class="text-sm text-gray-600">Made with ❤️ in Nigeria.</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="float-wa" aria-label="WhatsApp Chat" href="https://wa.me/2348168211183?text=Hello%20Akpom%20Event%20Planning%2C%20I%20want%20to%20book%20an%20event" target="_blank">
+    <div class="flex items-center gap-2 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg">
+      <span>WhatsApp Us</span>
+    </div>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Simple slider
+    const slides = document.getElementById('slides');
+    const dotsEl = document.getElementById('dots');
+    const total = slides.children.length;
+    let index = 0;
+
+    function goTo(i){
+      index = (i + total) % total;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      [...dotsEl.children].forEach((d, di)=>{
+        d.className = 'w-2.5 h-2.5 rounded-full ' + (di===index? 'bg-primary':'bg-gray-300');
+      });
+    }
+
+    for(let i=0;i<total;i++){
+      const dot = document.createElement('button');
+      dot.className = 'w-2.5 h-2.5 rounded-full bg-gray-300';
+      dot.addEventListener('click', ()=>goTo(i));
+      dotsEl.appendChild(dot);
+    }
+    goTo(0);
+    document.getElementById('prev').addEventListener('click', ()=>goTo(index-1));
+    document.getElementById('next').addEventListener('click', ()=>goTo(index+1));
+    setInterval(()=>goTo(index+1), 6000);
+
+    // Booking form -> open mailto prefilled & WhatsApp
+    const form = document.getElementById('bookingForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      const subject = encodeURIComponent(`New Booking: ${data.type} on ${data.date}`);
+      const body = encodeURIComponent(
+`Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Type: ${data.type}
+Date: ${data.date}
+Guests: ${data.guests}
+Location: ${data.location}
+Details: ${data.details}`);
+
+      // Mail
+      window.open(`mailto:Africantiana@gmail.com?subject=${subject}&body=${body}`);
+      // WhatsApp quick message
+      const wa = `https://wa.me/2348168211183?text=${encodeURIComponent('New booking request%0A' + body)}`;
+      window.open(wa, '_blank');
+      msg.textContent = 'Opening email/WhatsApp… If nothing opens, please contact us directly.';
+      form.reset();
+    });
+  </script>
+
+  <!-- Upload Modal -->
+  <div id="uploaderModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white w-[92%] max-w-2xl rounded-3xl shadow-soft border p-6 relative">
+      <button id="closeUploader" class="absolute right-3 top-3 px-3 py-1 rounded-full border">✕</button>
+      <h3 class="text-2xl font-black">Upload New Event</h3>
+      <p class="text-gray-600 mt-1 text-sm">Tip: You can select multiple images/videos at once.</p>
+
+      <form id="eventForm" class="mt-5 grid md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold">Event Title</label>
+          <input name="title" required class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="e.g., Chiamaka & Chinedu Wedding" />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold">Category</label>
+          <select name="category" class="mt-1 w-full px-4 py-3 rounded-xl border">
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Proposal</option>
+            <option>Corporate</option>
+          </select>
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold">Event Description</label>
+          <textarea name="description" rows="3" class="mt-1 w-full px-4 py-3 rounded-xl border" placeholder="Short details, colours, theme, venue..."></textarea>
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold">Photos / Videos</label>
+          <input id="eventFiles" type="file" accept="image/*,video/*" multiple class="mt-1 w-full px-4 py-3 rounded-xl border bg-white" />
+          <small class="text-gray-500">Accepted: JPG, PNG, MP4 (front-end preview only). Files are saved to your browser storage.</small>
+        </div>
+        <div class="md:col-span-2 flex items-center justify-between gap-3">
+          <button class="px-6 py-3 rounded-2xl bg-primary text-white font-semibold hover:bg-primary-dark" type="submit">Save Event</button>
+          <span id="uploaderMsg" class="text-sm text-gray-600"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // ===== Dynamic Events (LocalStorage) =====
+    const EVENT_KEY = 'akpom_events_v1';
+    const eventGrid = document.getElementById('eventGrid');
+    const emptyState = document.getElementById('emptyState');
+    const filters = document.getElementById('eventFilters');
+    let activeFilter = 'all';
+
+    function loadEvents(){
+      try { return JSON.parse(localStorage.getItem(EVENT_KEY)) || seedEvents(); }
+      catch { return seedEvents(); }
+    }
+
+    function saveEvents(list){
+      localStorage.setItem(EVENT_KEY, JSON.stringify(list));
+    }
+
+    function seedEvents(){
+      const demo = [
+        { id: crypto.randomUUID(), title: 'Igbo Traditional — Chiamaka & Chinedu', category: 'Wedding', description: 'Elegant Igba Nkwu with coral beads and live band.', media:[{type:'image',src:'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop'}], created: Date.now()-86400000*6 },
+        { id: crypto.randomUUID(), title: 'Corporate Product Launch', category: 'Corporate', description: 'Stage lighting, LED wall, MC, and DJ.', media:[{type:'image',src:'https://images.unsplash.com/photo-1518609571773-39b7d303a85d?q=80&w=1200&auto=format&fit=crop'}], created: Date.now()-86400000*10 },
+        { id: crypto.randomUUID(), title: '30th Birthday — Ifeoma', category: 'Birthday', description: 'Balloon wall, cake tasting, and photo corner.', media:[{type:'image',src:'https://images.unsplash.com/photo-1522000176868-2b52a6165f7b?q=80&w=1200&auto=format&fit=crop'}], created: Date.now()-86400000*14 },
+        { id: crypto.randomUUID(), title: 'Romantic Proposal at Sunset', category: 'Proposal', description: 'Roses, candles, and live sax.', media:[{type:'image',src:'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop'}], created: Date.now()-86400000*20 },
+      ];
+      saveEvents(demo);
+      return demo;
+    }
+
+    function humanDate(ts){
+      const d = new Date(ts);
+      return d.toLocaleDateString(undefined, {year:'numeric', month:'short', day:'numeric'});
+    }
+
+    function cardHTML(ev){
+      return ev.media.map((m, i)=>{
+        const isVideo = m.type === 'video';
+        const mediaEl = isVideo
+          ? `<video controls class="w-full rounded-2xl" src="${m.src}"></video>`
+          : `<img loading="lazy" class="w-full rounded-2xl" src="${m.src}" alt="${ev.title} ${i+1}"/>`;
+        return `<article class="break-inside-avoid mb-4 p-3 rounded-3xl bg-white border shadow-soft hover:shadow transition">
+          ${mediaEl}
+          <div class="mt-3">
+            <div class="text-xs text-gray-500 flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded-full bg-gray-100">${ev.category}</span>
+              <span>${humanDate(ev.created)}</span>
+            </div>
+            <h4 class="mt-2 font-bold">${ev.title}</h4>
+            ${ev.description ? `<p class="text-sm text-gray-600 mt-1">${ev.description}</p>`:''}
+          </div>
+        </article>`
+      }).join('');
+    }
+
+    function renderEvents(){
+      const list = loadEvents()
+        .sort((a,b)=>b.created - a.created)
+        .filter(ev => activeFilter==='all' ? true : ev.category===activeFilter);
+      eventGrid.innerHTML = list.map(cardHTML).join('');
+      emptyState.classList.toggle('hidden', list.length>0);
+      // Mark active filter
+      [...filters.querySelectorAll('button')].forEach(btn=>{
+        btn.classList.remove('bg-primary','text-white');
+        btn.classList.add('bg-white');
+        if(btn.dataset.filter===activeFilter){
+          btn.classList.remove('bg-white');
+          btn.classList.add('bg-primary','text-white');
+        }
+      });
+    }
+
+    filters.addEventListener('click', (e)=>{
+      if(e.target.matches('button[data-filter]')){
+        activeFilter = e.target.dataset.filter;
+        renderEvents();
+      }
+    });
+
+    // ===== Uploader Modal =====
+    const openUploader = document.getElementById('openUploader');
+    const closeUploader = document.getElementById('closeUploader');
+    const uploaderModal = document.getElementById('uploaderModal');
+    const eventForm = document.getElementById('eventForm');
+    const eventFiles = document.getElementById('eventFiles');
+    const uploaderMsg = document.getElementById('uploaderMsg');
+
+    openUploader.addEventListener('click', ()=> uploaderModal.classList.remove('hidden'));
+    closeUploader.addEventListener('click', ()=> uploaderModal.classList.add('hidden'));
+    uploaderModal.addEventListener('click', (e)=>{ if(e.target===uploaderModal) uploaderModal.classList.add('hidden'); });
+
+    function filesToMedia(files){
+      const promises = [...files].map(file=> new Promise((resolve)=>{
+        const reader = new FileReader();
+        reader.onload = ()=>{
+          const type = file.type.startsWith('video') ? 'video' : 'image';
+          resolve({type, src: reader.result});
+        };
+        reader.readAsDataURL(file);
+      }));
+      return Promise.all(promises);
+    }
+
+    eventForm.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const formData = Object.fromEntries(new FormData(eventForm).entries());
+      const files = eventFiles.files;
+      if(!files || files.length===0){
+        uploaderMsg.textContent = 'Please select at least one photo/video.';
+        return;
+      }
+      uploaderMsg.textContent = 'Saving…';
+      const media = await filesToMedia(files);
+      const events = loadEvents();
+      events.push({ id: crypto.randomUUID(), title: formData.title, category: formData.category, description: formData.description, media, created: Date.now() });
+      saveEvents(events);
+      uploaderMsg.textContent = 'Saved!';
+      eventForm.reset();
+      uploaderModal.classList.add('hidden');
+      renderEvents();
+    });
+
+    // Initial render
+    renderEvents();
+  </script>
+</body>
+</html>
